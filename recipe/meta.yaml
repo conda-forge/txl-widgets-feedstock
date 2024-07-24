@@ -1,5 +1,5 @@
 {% set name = "txl-widgets" %}
-{% set version = "0.2.13" %}
+{% set version = "0.2.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txl_widgets-{{ version }}.tar.gz
-  sha256: cb5b2531fcfbcda34d78b42ac1a0c8ab5d726ea01bf88ad383dcb2a1e0507d12
+  sha256: 582c261cfc0c2c35dc9ab1e3291c6e3a76487a4a745cb11ca66f557b4a4bd145
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.10
     - txl
     - ypywidgets >=0.7.0,<0.8.0
-    - ypywidgets-textual >=0.4.0,<0.5.0
+    - ypywidgets-textual >=0.4.4,<0.5.0
     - pycrdt >=0.8.11,<0.9.0
 
 test:
