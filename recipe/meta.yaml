@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "txl-widgets" %}
-{% set version = "0.2.16" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txl_widgets-{{ version }}.tar.gz
-  sha256: 52f7ad95db96b5d298bdebd0120cfd03824c9c26ed836462a99d5c3c20e10d3a
+  sha256: 65a5cf8b16de9e6e5d1f1d58f63df23bb0500ec75efe833cb4242d8670c1711c
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
